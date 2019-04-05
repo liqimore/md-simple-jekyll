@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+    <!-- {%- include header.html -%} -->
+
+    <main class="container">
+        <div class="wrapper">
+
+            <!-- Page Layout here -->
+            <div class="row">
+                <!-- left side -->
+                <div class="col s12 m4 l4">
+                        {%- include sidebar.html -%}
+
+                </div>
+
+                <!-- right side -->
+                <div class="col s12 m8 l8">
+                    {{ content }}
+                    {%- include footer.html -%}
+                </div>
+
+            </div>
+
+            
+        </div>
+    </main>
+
+    
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
